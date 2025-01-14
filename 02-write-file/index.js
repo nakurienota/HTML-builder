@@ -20,7 +20,7 @@ process.stdin.on('data', (data) => {
   }
 });
 
-process.on('SIGINT', exitProgram);
+process.on('exit', exitProgram);
 
 function exitProgram() {
   console.log('Thank you for using the program. Goodbye!');
